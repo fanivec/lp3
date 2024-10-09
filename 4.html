@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tablas en html</title>
+        <style>
+           table, th, td{
+                border: 1px solid blue;
+                border-collapse: collapse;
+                padding: 15px;
+           } 
+        </style>
+        <style>
+            #t2{
+                width: 100%;
+                background-color: aqua;
+            }
+            #t2 tr:nth-child(even){
+                background-color: burlywood;
+            }
+            #t2 th{
+                color: black;
+                background-color: green;
+            }
+        </style>
+     
+    </head>
+    <body>
+        <h1>Tablas en html</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Fani</td>
+                <td>Vera</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td> 
+            </tr>
+
+        </table>
+
+        <h1>Tabla 2 en html</h1>
+        <table id="t2">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Fani</td>
+                <td>Vera</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td> 
+            </tr>
+
+        </table>
+    </body>
+</html>

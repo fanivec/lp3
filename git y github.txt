@@ -1,10 +1,10 @@
 0-ABRIR TERMINAL
-1- git config --global user.email email@gmail.com   --> Este es el mismo de github
-2- git config --global user.name nombreusuario --> Nombredeusuariogithub
+1- git config --global user.email email@gmail.com   --> Este es el mismo de github 
+2- git config --global user.name nombreusuario --> Nombredeusuariogithub  
 3- git init --> inicializa git en el proyecto
 4- git add . --> agrega los archivos creados y sus modificaciones en git
 5- git commit -m "algùn comentario"
-6- git remote add origin https://github.com/fanivec/lp3
+6- git remote add origin https://github.com/fanivec/lp3  
 7- git branch main --> crear la rama main
 8- git push -u origin main --> subir proyecto y los cambios
 9- git status
