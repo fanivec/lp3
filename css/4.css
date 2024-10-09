@@ -1,0 +1,57 @@
+/*Maquetar con Ben*/
+.titulo{
+    text-align: center;
+    font-size: 3em;
+    background: bisque;
+    height: 80px;
+}
+.cabecera{
+    background: chocolate;
+    height: 75px;
+}
+.cabecera-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;  
+}
+.cabecera-menu_item{
+    line-height: 3;
+}
+.cabecera-menu_item:active{
+    background: red;
+}
+.cabecera-menu_link{
+    text-decoration: none;
+    font-size: 20;
+    color: yellowgreen;
+}
+
+.principal{
+    background: thistle;
+    height: 420px;
+}
+.piedepagina{
+    background: turquoise;
+    height: 200px;
+}
+
+/*Forma incorrecta de maquetear el menù*/
+/*nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    line-height: 3;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20;
+}*/

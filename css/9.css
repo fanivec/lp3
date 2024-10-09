@@ -1,0 +1,18 @@
+/*  Position
+
+fixed
+z-
+*/
+/*Position fixed*/
+.body{
+    padding-top: 4em;
+}
+.menu{
+    background: aquamarine;
+    padding: .5em;
+    text-align: center;
+    font-size: 4em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
