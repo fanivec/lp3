@@ -48,7 +48,7 @@ else{
 
 //switch
 
-var edad = 80;
+var edad = 800;
 var imprimir = "";
 
 switch(edad){
