@@ -1,0 +1,43 @@
+body {
+    background-color: #87CEEB; /* Fondo celeste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container {
+    background-color: #007BFF; /* Cuadrado azul */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 400px; /* Ancho fijo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: white; /* Color de texto blanco */
+}
+h2 {
+    font-size: 24px; /* Título más grande */
+    margin-bottom: 10px;
+}
+label {
+    font-size: 18px; /* Etiquetas más grandes */
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px; /* Margen entre campos */
+    border-radius: 5px; /* Bordes redondeados en los campos */
+    border: none; /* Sin borde */
+}
+input[type="submit"] {
+    background-color: #0056b3; /* Botón más oscuro */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Botón más grande */
+}
+input[type="submit"]:hover {
+    background-color: #004494; /* Color al pasar el mouse */
+}

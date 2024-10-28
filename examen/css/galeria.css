@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-image: radial-gradient(circle, green, black);
+    min-height: 100vh;
+}
+
+
+
+.footer {
+    background-color: papayawhip;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Cambiar el min-width según sea necesario */
+    grid-gap: 2rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cambiar el min-width a 250px */
+    grid-gap: 1rem; /* Espacio entre imágenes */
+    padding: 1rem;
+}
+
+.galery img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: 200px; /* Ajusta la altura a un tamaño fijo */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+}
+
+/* Nueva clase para los párrafos */
+.text-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 1rem; /* Espacio entre columnas */
+    padding: 1rem; /* Espacio interno */
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: 1 / -1; /* Asegura que el texto ocupe toda la fila */
+}
+
+/* Media query para ajustar el número de columnas en pantallas más pequeñas */
+@media (max-width: 400px) {
+    .text-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 300px) {
+    .text-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}

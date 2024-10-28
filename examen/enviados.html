@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .form-container, .messages-container {
+            width: 50%;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+  
+
+        <div class="messages-container">
+            <h2>Lista</h2>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Mensaje</th>
+                    <th>Acciones</th>
+                </tr>
+                <?php
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "<tr>
+                                <td>{$row['id']}</td>
+                                <td>{$row['nombre']}</td>
+                                <td>{$row['mensaje']}</td>
+                                <td>
+                                    <a href='modificar.php?id={$row['id']}'>Modificar</a>
+                                    <a href='eliminar.php?id={$row['id']}'>Eliminar</a>
+                                </td>
+                              </tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='4'>No hay mensajes.</td></tr>";
+                }
+                $conn->close();
+                ?>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
