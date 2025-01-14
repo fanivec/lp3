@@ -1,0 +1,35 @@
+ /*Agregar fuentes externas para el*/
+ @import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+ /*Agregar fuentes internas dentro del proyecto*/
+ @font-face {
+    font-family: embasy;
+    src: url();
+ }
+ 
+ /*Ejercicio 1 llamar a estilos css desde un archivo*/
+
+/*Estilos generales de las etiquetas (no recomendado)*/
+
+h1{
+    text-align: center;/*Sirve para centrar el texto */
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    text-decoration: underline;
+    font-family: 'Tangerine', serif;
+    color: brown;
+    background-color: beige;
+}
+
+a{
+    color: aqua;
+    background-color: blueviolet;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    background-color: antiquewhite;
+}
+
+body{
+    background-color: grey;
+}
